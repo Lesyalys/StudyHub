@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "year": 1,
+    "description": "",
+    "storage": "year1"
+  },
+  {
+    "id": 2,
+    "year": 2,
+    "description": "",
+    "storage": "year2"
+  },
+  {
+    "id": 3,
+    "year": 3,
+    "description": "",
+    "storage": "year3"
+  },
+  {
+    "id": 4,
+    "year": 4,
+    "description": "",
+    "storage": "year4"
+  }
+]
