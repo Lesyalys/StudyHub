@@ -7,5 +7,5 @@ export function menu() {
 
 export function chengeCutse(id) {
   const component = document.getElementById(`year_${id}`);
-  component.addEventListener("click", () => console.log("click"));
+  component.addEventListener("click", () => {});
 }

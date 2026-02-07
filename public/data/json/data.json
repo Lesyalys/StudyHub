@@ -7,27 +7,204 @@
     "content": [
       {
         "title": "Планирование карьеры",
-        "data": "/data/files/year1/CareerPlanning/careerPlanning.zip",
+        "data": [
+          {
+            "id": 1,
+            "title": "Полный курс по планированию карьеры",
+            "url": "/data/files/year1/CareerPlanning/careerPlanning.zip",
+            "type": "zip",
+            "size": "25.4 MB",
+            "description": "Архив содержит все материалы по планированию карьеры"
+          }
+        ],
         "lastUpdateComponent": "2024-01-10",
         "type": "zip"
       },
       {
         "title": "Компьютерная графика",
-        "data": "/data/files/year1/ProgrammingIntro/programming.pdf",
+        "data": [
+          {
+            "id": 1,
+            "title": "Практическая работа №1",
+            "url": "/data/files/year1/ComputerGraphics/1_Practice.zip",
+            "type": "zip",
+            "size": "15.2 MB",
+            "description": "Основы работы с графическими примитивами"
+          },
+          {
+            "id": 2,
+            "title": "Практическая работа №2",
+            "url": "/data/files/year1/ComputerGraphics/2_Practice.zip",
+            "type": "zip",
+            "size": "18.7 MB",
+            "description": "3D моделирование простых объектов"
+          },
+          {
+            "id": 3,
+            "title": "Практическая работа №3",
+            "url": "/data/files/year1/ComputerGraphics/3_Practice.zip",
+            "type": "zip",
+            "size": "22.1 MB",
+            "description": "Текстурирование и материалы"
+          },
+          {
+            "id": 4,
+            "title": "Практическая работа №4",
+            "url": "/data/files/year1/ComputerGraphics/4_Practice.zip",
+            "type": "zip",
+            "size": "19.5 MB",
+            "description": "Анимация базовых объектов"
+          },
+          {
+            "id": 5,
+            "title": "Практическая работа №5",
+            "url": "/data/files/year1/ComputerGraphics/5_Practice.zip",
+            "type": "zip",
+            "size": "24.3 MB",
+            "description": "Создание сложных сцен"
+          },
+          {
+            "id": 6,
+            "title": "Практическая работа №6",
+            "url": "/data/files/year1/ComputerGraphics/6_Practice.zip",
+            "type": "zip",
+            "size": "28.9 MB",
+            "description": "Финальный проект по компьютерной графике"
+          },
+          {
+            "id": 7,
+            "title": "Решение задач в FreeCAD",
+            "url": "/data/files/year1/ComputerGraphics/FreeCAD_Solution.zip",
+            "type": "zip",
+            "size": "35.6 MB",
+            "description": "Примеры решений типовых задач"
+          },
+          {
+            "id": 8,
+            "title": "FreeCAD - установка и основы",
+            "url": "/data/files/year1/ComputerGraphics/FreeCAD.zip",
+            "type": "zip",
+            "size": "42.1 MB",
+            "description": "Дистрибутив и учебные материалы по FreeCAD"
+          }
+        ],
+        "lastUpdateComponent": "2024-01-12",
+        "type": "zip"
+      },
+      {
+        "title": "Английский",
+        "data": [
+          {
+            "id": 1,
+            "title": "Работа с текстом на английском",
+            "url": "/data/files/year1/English/work_with_text.pdf",
+            "type": "pdf",
+            "size": "3.2 MB",
+            "description": "Учебное пособие по работе с английскими текстами"
+          }
+        ],
         "lastUpdateComponent": "2024-01-12",
         "type": "pdf"
       },
       {
-        "title": "Введение в программирование",
-        "data": "/data/files/year1/ProgrammingIntro/programming.pdf",
-        "lastUpdateComponent": "2024-01-12",
-        "type": "pdf"
-      },
-      {
-        "title": "Задачи по математике",
-        "data": "/data/files/year1/MathTasks/tasks.docx",
+        "title": "Философия",
+        "data": [
+          {
+            "id": 1,
+            "title": "Вопросы к зачету по философии",
+            "url": "/data/files/year1/Filosofy/Seminary_voprosy_k_zachetu.doc",
+            "type": "doc",
+            "size": "1.8 MB",
+            "description": "Список вопросов для подготовки к зачету"
+          }
+        ],
         "lastUpdateComponent": "2024-01-14",
-        "type": "docx"
+        "type": "doc"
+      },
+      {
+        "title": "Высшая математика",
+        "data": [
+          {
+            "id": 1,
+            "title": "Все ИДЗ по высшей математике",
+            "url": "/data/files/year1/Math/math_allIDZ.zip",
+            "type": "zip",
+            "size": "48.5 MB",
+            "description": "Архив со всеми индивидуальными домашними заданиями"
+          },
+          {
+            "id": 2,
+            "title": "Презентации по математике",
+            "url": "/data/files/year1/Math/math_presentation (2).zip",
+            "type": "zip",
+            "size": "32.7 MB",
+            "description": "Презентации к лекциям по высшей математике"
+          }
+        ],
+        "lastUpdateComponent": "2024-01-14",
+        "type": "zip"
+      },
+      {
+        "title": "Физика",
+        "data": [
+          {
+            "id": 1,
+            "title": "Примеры решения задач",
+            "url": "/data/files/year1/Physics/example.pdf",
+            "type": "pdf",
+            "size": "5.6 MB",
+            "description": "Типовые задачи по физике с решениями"
+          },
+          {
+            "id": 2,
+            "title": "Физика - материалы 05.03.2024",
+            "url": "/data/files/year1/Physics/Physics_(05.03.2024).zip",
+            "type": "zip",
+            "size": "21.3 MB",
+            "description": "Лекция по механике от 5 марта"
+          },
+          {
+            "id": 3,
+            "title": "Физика - материалы 06.02.2024",
+            "url": "/data/files/year1/Physics/Physics_(06.02.2024).zip",
+            "type": "zip",
+            "size": "18.9 MB",
+            "description": "Лекция по термодинамике от 6 февраля"
+          },
+          {
+            "id": 4,
+            "title": "Физика - материалы 18.03.2024",
+            "url": "/data/files/year1/Physics/Physics_(18.03.2024).zip",
+            "type": "zip",
+            "size": "24.1 MB",
+            "description": "Лекция по электродинамике от 18 марта"
+          },
+          {
+            "id": 5,
+            "title": "Физика - материалы 20.02.2024",
+            "url": "/data/files/year1/Physics/Physics_(20.02.2024).zip",
+            "type": "zip",
+            "size": "19.7 MB",
+            "description": "Лекция по оптике от 20 февраля"
+          }
+        ],
+        "lastUpdateComponent": "2024-01-14",
+        "type": "mixed"
+      },
+      {
+        "title": "Программирование",
+        "data": [
+          {
+            "id": 1,
+            "title": "Курс программирования на C++",
+            "url": "/data/files/year1/Programming/Programming c++.zip",
+            "type": "zip",
+            "size": "67.3 MB",
+            "description": "Полный курс по программированию на C++ с примерами"
+          }
+        ],
+        "lastUpdateComponent": "2024-01-14",
+        "type": "zip"
       }
     ]
   },
@@ -39,13 +216,31 @@
     "content": [
       {
         "title": "Базы данных",
-        "data": "/data/files/year2/Databases/db_materials.zip",
+        "data": [
+          {
+            "id": 1,
+            "title": "Курс по базам данных",
+            "url": "/data/files/year2/Databases/db_materials.zip",
+            "type": "zip",
+            "size": "45.2 MB",
+            "description": "Материалы по SQL и проектированию баз данных"
+          }
+        ],
         "lastUpdateComponent": "2024-01-18",
         "type": "zip"
       },
       {
         "title": "Веб-разработка",
-        "data": "/data/files/year2/WebDev/web_course.pdf",
+        "data": [
+          {
+            "id": 1,
+            "title": "Основы веб-разработки",
+            "url": "/data/files/year2/WebDev/web_course.pdf",
+            "type": "pdf",
+            "size": "12.8 MB",
+            "description": "Учебник по HTML, CSS и JavaScript"
+          }
+        ],
         "lastUpdateComponent": "2024-01-19",
         "type": "pdf"
       }
