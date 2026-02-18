@@ -25,18 +25,32 @@ export class SupabaseClass {
     const { data } = await this.supabase.storage
       .from(`dataEducation`)
       .list(datas);
-    // console.log(data);
-    setData(data);
+    console.log(data);
+    setData({ dataYear: data, yearName: datas });
   }
 
-  async getDownloadsData(datas, instruments) {
-    const year = JSON.stringify(datas.name);
-    const page = JSON.stringify(instruments);
-    console.log(`${year}/${page}`);
-    const { data } = await this.supabase.storage
-      .from(`dataEducation`)
-      .download(`${datas}/${{ instruments }}`);
-    // console.log(data);
-    return data;
+  async getDownloadsData(courseName, yearName) {
+    console.log(`${yearName}/${courseName}/${courseName}.zip`);
+    try {
+      const { data, error } = await this.supabase.storage
+        .from("dataEducation")
+        .download(`${yearName}/${courseName}/${courseName}.zip`);
+
+      if (error) {
+        console.error("Ошибка при скачивании:", error);
+        return null;
+      }
+
+      if (!data) {
+        console.error("Файл не найден или пуст");
+        return null;
+      }
+
+      console.log("Файл успешно загружен:", data);
+      return data;
+    } catch (err) {
+      console.error("Исключение при скачивании:", err);
+      return null;
+    }
   }
 }

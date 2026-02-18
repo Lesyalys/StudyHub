@@ -3,7 +3,6 @@ import { SupabaseClass } from "../supabase/Supabase.js";
 
 export function SupabaseComponent({ instruments, setInstruments, setData }) {
   const supabase = new SupabaseClass();
-  // const [instruments, setInstruments] = useState([]);
 
   useEffect(() => {
     supabase.getFiles(setInstruments);
