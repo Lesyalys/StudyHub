@@ -7,23 +7,6 @@ export function Header() {
         <img id="imgMaskot" src={whiteWolf} className="w-30 h-30 " />
         STUDYHUB
       </span>
-
-      {/* Мобильное меню (упрощенное для мобильных) */}
-      {/* <span className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base text-gray-600">
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Study
-        </p>
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Fast
-        </p>
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Fast
-        </p>
-      </span>
-
-      <span className="text-xs sm:text-sm text-gray-500 hover:text-gray-700 transition-colors duration-200 cursor-pointer border border-gray-200 px-4 sm:px-5 py-1.5 sm:py-2 rounded-md hover:border-gray-300">
-        menu
-      </span> */}
     </nav>
   );
 }
