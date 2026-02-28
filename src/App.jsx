@@ -3,11 +3,13 @@ import { SupabaseComponent } from "./components/Supabase.jsx";
 import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { CourseData } from "./components/CourseData.jsx";
+import { Icon } from "@iconify/react";
 import "./App.css";
 
 export default function App() {
   const [data, setData] = useState({ dataYear: "dataYear", yearName: "datas" });
   const [instruments, setInstruments] = useState([]);
+  const [loading, setLoading] = useState(false);
   return (
     <div className="min-h-screen w-full bg-no-repeat bg-cover bg-center bg-[url('/img/light.png')] flex flex-col">
       <Header />
@@ -34,7 +36,14 @@ export default function App() {
             </div>
 
             <div className="border border-white/30 bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6">
-              <CourseData data={data} />
+              {loading ? (
+                <Icon
+                  icon="line-md:loading-twotone-loop"
+                  className="animate-spin text-gray-500 md:h-25 md:w-25 lg:h-35 lg:w-35 justify-center"
+                />
+              ) : (
+                <CourseData data={data} setLoading={setLoading} />
+              )}
             </div>
           </div>
         </div>
