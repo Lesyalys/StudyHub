@@ -30,11 +30,11 @@ export class SupabaseClass {
   }
 
   async getDownloadsData(courseName, yearName) {
-    console.log(`${yearName}/${courseName}/${courseName}.zip`);
+    console.log(`${yearName}/${courseName}`);
     try {
       const { data, error } = await this.supabase.storage
         .from("dataEducation")
-        .download(`${yearName}/${courseName}/${courseName}.zip`);
+        .download(`${yearName}/${courseName}`);
 
       if (error) {
         console.error("Ошибка при скачивании:", error);

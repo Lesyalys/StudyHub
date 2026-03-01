@@ -6,9 +6,9 @@ export function CourseData({ data, setLoading }) {
   useEffect(() => {}, []);
   return (
     <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3  lg:grid-cols-3 gap-2 sm:gap-3 mt-4 sm:mt-6">
-      {Array.isArray(data.dataYear) &&
-        //data?.dataYear &&
-        data.dataYear.map((e) => {
+      {Array.isArray(data?.dataYear) &&
+        data?.dataYear.length > 1 &&
+        data?.dataYear.map((e) => {
           return (
             <span
               key={e.name}
