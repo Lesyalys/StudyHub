@@ -1,12 +1,21 @@
 import whiteWolf from "/img/whiteWolf.svg";
+import { useEffect } from "react";
 
-export function Header() {
+export function Header({ theme, setTheme }) {
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <nav className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 py-4 sm:py-6 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto w-full">
       <span className="flex flex-row items-center gap-2 text-xl sm:text-2xl font-light text-gray-800">
         <img id="imgMaskot" src={whiteWolf} className="w-30 h-30 " />
         STUDYHUB
       </span>
+      <div onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        theme toggle
+      </div>
 
       {/* Мобильное меню (упрощенное для мобильных) */}
       {/* <span className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base text-gray-600">

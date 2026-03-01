@@ -1,3 +1,12 @@
+:root {
+  --bg-img: url("/img/light.png");
+  --text: black;
+}
+[data-theme="dark"] {
+  --bg-img: url("/img/dark.png");
+  --text: white;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

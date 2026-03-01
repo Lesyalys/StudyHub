@@ -18,7 +18,11 @@ export function SupabaseComponent({ instruments, setInstruments, setData }) {
           <div
             key={instrument.name}
             onClick={() => supabase.getFilesOnName(setData, instrument.name)}
-            className="relative shrink-0 px-3 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm text-gray-600 hover:text-gray-900  rounded-md  transition-all duration-200 cursor-pointer whitespace-nowrap lg:whitespace-normal  "
+            className="border-b border-white/30 relative shrink-0 px-3 sm:px-4 py-2 
+              sm:py-2.5 text-xs sm:text-sm text-gray-600 hover:text-gray-900 
+                hover:bg-white  
+                 transition-all duration-200 cursor-pointer whitespace-nowrap 
+                lg:whitespace-normal  "
           >
             {instrument.name}
           </div>
