@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
-import { SupabaseClass } from "../supabase/Supabase.js";
+import { useEffect } from "react";
+// import { SupabaseClass } from "../supabase/Supabase.js";
 
-export function SupabaseComponent({ instruments, setInstruments, setData }) {
-  const supabase = new SupabaseClass();
-
+// const supabase = new SupabaseClass();
+export function SupabaseComponent({
+  instruments,
+  setInstruments,
+  setData,
+  supabase,
+}) {
   useEffect(() => {
     supabase.getFiles(setInstruments);
   }, []);

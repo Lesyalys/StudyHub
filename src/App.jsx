@@ -4,18 +4,18 @@ import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { CourseData } from "./components/CourseData.jsx";
 import { Icon } from "@iconify/react";
+import { SupabaseClass } from "./supabase/Supabase.js";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
 import "./App.css";
+
+const supabase = new SupabaseClass();
 
 export default function App() {
   const [data, setData] = useState({ dataYear: "", yearName: "" });
   const [instruments, setInstruments] = useState([]);
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  // useEffect(() => {
-  //   document.documentElement.setAttribute("data-theme", theme);
-  //   localStorage.setItem("theme", theme);
-  // }, [theme]);
 
   return (
     <div
@@ -26,6 +26,7 @@ export default function App() {
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-10">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
           <SupabaseComponent
+            supabase={supabase}
             setData={setData}
             setInstruments={setInstruments}
             instruments={instruments}
@@ -50,9 +51,21 @@ export default function App() {
                   className=" animate-spin  md:h-30 md:w-30 lg:h-35 lg:w-35 "
                 />
               ) : data.dataYear ? (
-                <CourseData data={data} setLoading={setLoading} />
+                <CourseData
+                  supabase={supabase}
+                  data={data}
+                  setLoading={setLoading}
+                />
               ) : (
-                <p>Select course year to see available courses</p>
+                <>
+                  <p>Select course year to see available courses</p>
+                  <DotLottieReact
+                    className="md:h-70 h-30"
+                    src="https://lottie.host/a6429892-af72-4b09-9ea7-fd86c3a80aaf/MCmTP3rGsq.lottie"
+                    loop
+                    autoplay
+                  />
+                </>
               )}
             </div>
           </div>
