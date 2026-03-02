@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 
 export function Footer() {
   return (
@@ -8,8 +8,9 @@ export function Footer() {
           Lesinka <span className="mx-1 sm:mx-2">·</span> 2026
           <span className="mx-1 sm:mx-2">·</span>
           <a href="https://github.com/Lesyalys" target="_blank">
-            <Icon icon="line-md:github" width="24" height="24" />
+            github
           </a>
+          {/* <Icon icon="line-md:github" width="24" height="24" /> */}
         </p>
       </div>
     </footer>

@@ -3,7 +3,7 @@ import { SupabaseComponent } from "./components/Supabase.jsx";
 import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { CourseData } from "./components/CourseData.jsx";
-import { Icon } from "@iconify/react";
+// import { Icon } from "@iconify/react";
 import { SupabaseClass } from "./supabase/Supabase.js";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
@@ -46,10 +46,17 @@ export default function App() {
 
             <div className="md:h-100 h-64 w-full overflow-auto justify-items-center border  border-white/30 bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-6">
               {loading ? (
-                <Icon
-                  icon="line-md:loading-twotone-loop"
-                  className=" animate-spin  md:h-30 md:w-30 lg:h-35 lg:w-35 "
-                />
+                <div className="flex justify-center items-center">
+                  <div
+                    className="
+    w-10 h-10 md:w-16 md:h-16
+    border-4 border-white/30 
+    border-t-white 
+    rounded-full 
+    animate-spin
+  "
+                  ></div>
+                </div>
               ) : data.dataYear ? (
                 <CourseData
                   supabase={supabase}
