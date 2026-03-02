@@ -1,6 +1,6 @@
 import whiteWolf from "/img/whiteWolf.svg";
+import darkWolf from "/img/darkWolf.svg";
 import { useEffect } from "react";
-import { Icon } from "@iconify/react";
 
 export function Header({ theme, setTheme }) {
   useEffect(() => {
@@ -9,34 +9,19 @@ export function Header({ theme, setTheme }) {
   }, [theme]);
 
   return (
-    <nav className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 py-4 sm:py-6 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto w-full">
+    <nav
+      style={{ color: "var(--text)" }}
+      className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 py-4 sm:py-6 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto w-full"
+    >
       <span className="flex flex-row items-center gap-2 text-xl sm:text-2xl font-light ">
-        <img id="imgMaskot" src={whiteWolf} className="w-30 h-30 " />
+        <img
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          id="imgMaskot"
+          src={theme === "light" ? whiteWolf : darkWolf}
+          className="md:w-30 md:h-30 w-20 h-20"
+        />
         STUDYHUB
       </span>
-      <Icon
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        icon="line-md:switch-off-to-switch-transition"
-        width="24"
-        height="24"
-      />
-
-      {/* Мобильное меню (упрощенное для мобильных) */}
-      {/* <span className="flex flex-row flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base text-gray-600">
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Study
-        </p>
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Fast
-        </p>
-        <p className="hover:text-gray-900 transition-colors duration-200 cursor-pointer relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-gray-400 after:transition-all hover:after:w-full">
-          Fast
-        </p>
-      </span>
-
-      <span className="text-xs sm:text-sm text-gray-500 hover:text-gray-700 transition-colors duration-200 cursor-pointer border border-gray-200 px-4 sm:px-5 py-1.5 sm:py-2 rounded-md hover:border-gray-300">
-        menu
-      </span> */}
     </nav>
   );
 }

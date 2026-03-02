@@ -1,1 +1,71 @@
 @import "tailwindcss";
+
+:root {
+  --bg-img: url("/img/light.png");
+  --text: black;
+  --btn-hover-text: #ffffff;
+  --btn-color-border: #ffffff;
+  --btn-color-border-hover: #456c97;
+  --btn-hover-bg: #456c97;
+}
+[data-theme="dark"] {
+  --bg-img: url("/img/dark.png");
+  --text: white;
+  --btn-hover-text: #000000;
+  --btn-color-border: #ffffff;
+  --btn-color-border-hover: #ffffff;
+  --btn-hover-bg: #e2ebf2;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text) rgba(255, 255, 255, 0.1);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--btn-hover-bg, #456c97);
+}
+#imgMaskot {
+  cursor: pointer;
+}
+#imgMaskot:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+body {
+  background-color: var(--bg-img);
+  color: var(--text);
+  scrollbar-color: var(--text);
+}
+
+li:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+}
+button {
+  border-color: var(--btn-color-border);
+  border-radius: 0.2rem;
+}
+button:hover {
+  background-color: var(--btn-hover-bg);
+  border-color: var(--btn-color-border-hover);
+  /* color: var(--btn-hover-text); */
+  transform: translateY(-2px);
+  animation: ease-in-out 0.3s;
+  color: var(--btn-hover-text);
+}
