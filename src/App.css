@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 :root {
   --bg-img: url("/img/light.png");
   --text: black;
@@ -57,11 +63,11 @@ li:hover {
   background-color: var(--btn-hover-bg);
   color: var(--btn-hover-text);
 }
-button {
+#btn-select-materials {
   border-color: var(--btn-color-border);
   border-radius: 0.2rem;
 }
-button:hover {
+#btn-select-material:hover {
   background-color: var(--btn-hover-bg);
   border-color: var(--btn-color-border-hover);
   /* color: var(--btn-hover-text); */
