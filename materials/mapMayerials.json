@@ -1,163 +1,163 @@
 {
-    "datasYears": [
+  "datasYears": [
+    {
+      "id": 1,
+      "path": [
         {
-            "id": 1,
-            "path": [
-                {
-                    "shortName": "Планирование карьеры",
-                    "fullPath": "StudyHub/materials/year_1/Планирование карьеры.zip",
-                    "discription": "",
-                    "dataAdd": "03032026"
-                },
-                {
-                    "shortName": "English",
-                    "fullPath": "StudyHub/materials/year_1/English.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Философия",
-                    "fullPath": "StudyHub/materials/year_1/Философия.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Математика",
-                    "fullPath": "StudyHub/materials/year_1/Математика.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Компьютерная графика",
-                    "fullPath": "StudyHub/materials/year_1/Компьютерная графика.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                }
-            ]
+          "shortName": "Планирование карьеры",
+          "fullPath": "/materials/year_1/Планирование карьеры.zip",
+          "discription": "",
+          "dataAdd": "03032026"
         },
         {
-            "id": 2,
-            "path": [
-                {
-                    "shortName": "1C",
-                    "fullPath": "StudyHub/materials/year_2/1C.zip",
-                    "discription": "",
-                    "dataAdd": "03032026"
-                },
-                {
-                    "shortName": "БЖ",
-                    "fullPath": "StudyHub/materials/year_2/БЖ.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "ЭВМ",
-                    "fullPath": "StudyHub/materials/year_2/ЭВМ.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Математика",
-                    "fullPath": "StudyHub/materials/year_2/Математика.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "БД",
-                    "fullPath": "StudyHub/materials/year_2/БД.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                }
-            ]
+          "shortName": "English",
+          "fullPath": "/materials/year_1/English.zip",
+          "discription": "",
+          "dataAdd": ""
         },
         {
-            "id": 3,
-            "path": [
-                {
-                    "shortName": "1C ERP",
-                    "fullPath": "StudyHub/materials/year_3/1C ERP.zip",
-                    "discription": "",
-                    "dataAdd": "03032026"
-                },
-                {
-                    "shortName": "1C Programming.zip",
-                    "fullPath": "StudyHub/materials/year_3/1C Programming.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Компьютерное моделирование",
-                    "fullPath": "StudyHub/materials/year_3/Компьютерное моделирование.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Курсовая",
-                    "fullPath": "StudyHub/materials/year_3/Курсовая.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Производственная практика",
-                    "fullPath": "StudyHub/materials/year_3/Производственная практика.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Java",
-                    "fullPath": "StudyHub/materials/year_3/Java.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "kotlin",
-                    "fullPath": "StudyHub/materials/year_3/kotlin.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "НИД",
-                    "fullPath": "StudyHub/materials/year_3/НИД.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "ООП",
-                    "fullPath": "StudyHub/materials/year_3/ООП.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Робототехника",
-                    "fullPath": "StudyHub/materials/year_3/Робототехника.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Технология разработки программного обеспечения",
-                    "fullPath": "StudyHub/materials/year_3/Технология разработки программного обеспечения.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "СУБД",
-                    "fullPath": "StudyHub/materials/year_3/СУБД.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "Визуальные среды программирования",
-                    "fullPath": "StudyHub/materials/year_3/Визуальные среды программирования.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                },
-                {
-                    "shortName": "web",
-                    "fullPath": "StudyHub/materials/year_3/web.zip",
-                    "discription": "",
-                    "dataAdd": ""
-                }
-            ]
+          "shortName": "Философия",
+          "fullPath": "/materials/year_1/Философия.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Математика",
+          "fullPath": "/materials/year_1/Математика.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Компьютерная графика",
+          "fullPath": "/materials/year_1/Компьютерная графика.zip",
+          "discription": "",
+          "dataAdd": ""
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "path": [
+        {
+          "shortName": "1C",
+          "fullPath": "/materials/year_2/1C.zip",
+          "discription": "",
+          "dataAdd": "03032026"
+        },
+        {
+          "shortName": "БЖ",
+          "fullPath": "/materials/year_2/БЖ.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "ЭВМ",
+          "fullPath": "/materials/year_2/ЭВМ.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Математика",
+          "fullPath": "/materials/year_2/Математика.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "БД",
+          "fullPath": "/materials/year_2/БД.zip",
+          "discription": "",
+          "dataAdd": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "path": [
+        {
+          "shortName": "1C ERP",
+          "fullPath": "/materials/year_3/1C ERP.zip",
+          "discription": "",
+          "dataAdd": "03032026"
+        },
+        {
+          "shortName": "1C Programming",
+          "fullPath": "/materials/year_3/1C Programming.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Компьютерное моделирование",
+          "fullPath": "/materials/year_3/Компьютерное моделирование.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Курсовая",
+          "fullPath": "/materials/year_3/Курсовая.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Производственная практика",
+          "fullPath": "/materials/year_3/Производственная практика.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Java",
+          "fullPath": "/materials/year_3/Java.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "kotlin",
+          "fullPath": "/materials/year_3/kotlin.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "НИД",
+          "fullPath": "/materials/year_3/НИД.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "ООП",
+          "fullPath": "/materials/year_3/ООП.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Робототехника",
+          "fullPath": "/materials/year_3/Робототехника.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Технология разработки программного обеспечения",
+          "fullPath": "/materials/year_3/Технология разработки программного обеспечения.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "СУБД",
+          "fullPath": "/materials/year_3/СУБД.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "Визуальные среды программирования",
+          "fullPath": "/materials/year_3/Визуальные среды программирования.zip",
+          "discription": "",
+          "dataAdd": ""
+        },
+        {
+          "shortName": "web",
+          "fullPath": "/materials/year_3/web.zip",
+          "discription": "",
+          "dataAdd": ""
+        }
+      ]
+    }
+  ]
 }
