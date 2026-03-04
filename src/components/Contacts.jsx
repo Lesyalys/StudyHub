@@ -25,8 +25,8 @@ export function Contacts() {
               const filtersData = teachers.filter(teacher => teacher.course.includes(selectCourse));
               setContacts(filtersData);
             }}
-            className="cursor-pointer">
-            {Array.from({ length: 5 }).map((e2, i) => <option className="text-center" value={i}>{i === 0 ? "Все" : i}</option>)}
+            className="cursor-pointer ">
+            {Array.from({ length: 5 }).map((e2, i) => <option className="text-center text-black" value={i}>{i === 0 ? "Все" : i}</option>)}
           </select>
         </div>
       </div>

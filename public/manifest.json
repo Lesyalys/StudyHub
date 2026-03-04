@@ -1,0 +1,32 @@
+{
+    "name": "STUDYHUB — Учебные материалы",
+    "short_name": "STUDYHUB",
+    "description": "Учебные материалы для студентов ФИТИМ 2023-2027",
+    "start_url": "/StudyHub/",
+    "display": "standalone",
+    "theme_color": "#456C97",
+    "background_color": "#D2DCE6",
+    "icons": [
+        {
+            "src": "/StudyHub/img/study-72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/StudyHub/img/study-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/StudyHub/img/study-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/StudyHub/img/study-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

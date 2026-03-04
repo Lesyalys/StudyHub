@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 html,
 body {
   margin: 0;
@@ -6,6 +7,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 :root {
   --bg-img: url("/img/light.png");
   --text: black;
@@ -14,6 +16,7 @@ body {
   --btn-color-border-hover: #456c97;
   --btn-hover-bg: #456c97;
 }
+
 [data-theme="dark"] {
   --bg-img: url("/img/dark.png");
   --text: white;
@@ -22,6 +25,7 @@ body {
   --btn-color-border-hover: #ffffff;
   --btn-hover-bg: #e2ebf2;
 }
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--text) rgba(255, 255, 255, 0.1);
@@ -46,13 +50,16 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: var(--btn-hover-bg, #456c97);
 }
+
 #imgMaskot {
   cursor: pointer;
 }
+
 #imgMaskot:hover {
   transform: translateY(-2px);
   transition: 0.3s;
 }
+
 body {
   background-color: var(--bg-img);
   color: var(--text);
@@ -63,10 +70,12 @@ li:hover {
   background-color: var(--btn-hover-bg);
   color: var(--btn-hover-text);
 }
+
 #btn-select-materials {
   border-color: var(--btn-color-border);
   border-radius: 0.2rem;
 }
+
 #btn-select-material:hover {
   background-color: var(--btn-hover-bg);
   border-color: var(--btn-color-border-hover);

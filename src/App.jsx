@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer.jsx";
 import { CourseData } from "./components/CourseData.jsx";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Contacts } from "./components/Contacts.jsx";
+import { initServiceWorker } from "./ulils_module/initServiceWorker.js";
 
 import "./App.css";
 
@@ -17,6 +18,10 @@ export default function App() {
   });
   const [loading, setLoading] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    initServiceWorker();
+  }, [])
 
   return (
     <div
