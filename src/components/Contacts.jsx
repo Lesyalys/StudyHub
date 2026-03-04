@@ -1,15 +1,35 @@
+import { useState } from "react";
 import { teachers } from "../contacts/teacher.json";
+import { useEffect } from "react";
 
 export function Contacts() {
-  // console.log(teachers)
+
+  const [contacts, setContacts] = useState(teachers);
+
   return (
     <div className="pt-2">
-      <strong
-        className="text-lg font-semibold block mb-3"
+      <div
+        className="text-lg font-semibold  mb-3 flex flex-row justify-between"
         style={{ color: "var(--text)" }}
       >
         Контакты преподавателей
-      </strong>
+        <div>
+          Год
+          <select
+            onChange={(e2) => {
+              const selectCourse = Number(e2.target.value);
+              if (selectCourse === 0) {
+                setContacts(teachers);
+                return;
+              }
+              const filtersData = teachers.filter(teacher => teacher.course.includes(selectCourse));
+              setContacts(filtersData);
+            }}
+            className="cursor-pointer">
+            {Array.from({ length: 5 }).map((e2, i) => <option className="text-center" value={i}>{i === 0 ? "Все" : i}</option>)}
+          </select>
+        </div>
+      </div>
 
       <ul
         className="w-full max-h-80 overflow-y-auto rounded-lg space-y-3 p-2"
@@ -18,7 +38,7 @@ export function Contacts() {
           scrollbarColor: "var(--text) rgba(255, 255, 255, 0.1)",
         }}
       >
-        {teachers.map((e, i) => (
+        {contacts.map((e, i) => (
           <li
             key={i}
             className="border rounded-lg p-4 transition-all duration-200 hover:shadow-md"

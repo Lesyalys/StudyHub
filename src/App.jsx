@@ -82,7 +82,7 @@ export default function App() {
               ) : (
                 <div className="flex flex-col items-center justify-center h-64 text-center">
                   <p className="text-lg mb-6" style={{ color: "var(--text)" }}>
-                    Выберите год курса для просмотра материалов
+                    Выберите год для просмотра материалов
                   </p>
                   <div className="w-48 h-48 opacity-75">
                     <DotLottieReact
